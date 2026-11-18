@@ -1,8 +1,1 @@
-
-document.addEventListener("DOMContentLoaded",()=>{
-  const toggle=document.querySelector(".mobile-toggle");
-  const links=document.querySelector(".navlinks");
-  if(toggle&&links) toggle.addEventListener("click",()=>links.classList.toggle("open"));
-  const year=document.querySelectorAll("[data-year]");
-  year.forEach(x=>x.textContent=new Date().getFullYear());
-});
+(()=>{const t=document.querySelector('.menu-toggle'),n=document.querySelector('.nav-links');if(t&&n){t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o));});n.addEventListener('click',e=>{if(e.target.closest('a')){n.classList.remove('open');t.setAttribute('aria-expanded','false');}});}document.querySelectorAll('[data-year]').forEach(x=>x.textContent=new Date().getFullYear());})();
