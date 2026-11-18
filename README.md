@@ -1,18 +1,18 @@
-# Wajid Basra Personal SEO Website
+# Wajid Basra — Personal Portfolio Website
 
-Static multi-page personal website for Wajid Basra.
+Static, responsive portfolio site built for GitHub Pages.
 
-## Deploy on GitHub Pages
+## Pages
+- Home, About, Services, Search Systems, Selected Work, Insights and Contact
+- 13 dedicated service pages under `/services/`
+- Legacy root-level service URLs redirect to the new `/services/` URLs
 
-1. Create a GitHub repository.
-2. Upload the contents of this folder to the repository root.
-3. Go to **Settings → Pages**.
-4. Choose **Deploy from a branch** and select `main` + `/ (root)`, then Save.
-5. GitHub Pages will publish the site.
+## Technical
+- Semantic HTML, responsive CSS and lightweight JavaScript
+- Per-page title, meta description, canonical, Open Graph and Twitter metadata
+- JSON-LD structured data appropriate to each page
+- XML sitemap, robots.txt, favicon, SVG brand mark and 404 page
+- No build step or package installation required
 
-Before publishing, replace the placeholder URL in `robots.txt` and `sitemap.xml` with your actual GitHub Pages URL.
-
-If the repository is `username.github.io`, the site URL is `https://username.github.io/`.
-If it is a normal project repository, the URL is `https://username.github.io/repository-name/`.
-
-GitHub Pages is static hosting, so no separate hosting account is required.
+## Deploy
+Upload the complete contents of this folder to the repository root. Keep GitHub Pages configured to deploy from the existing publishing source.
