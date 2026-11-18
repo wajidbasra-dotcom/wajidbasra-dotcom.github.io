@@ -20,8 +20,8 @@
 @media(max-width:480px){.shell{width:calc(100% - 30px)}h2{font-size:42px}.hero-lead,.page-lead{font-size:16px}.hero-tags{gap:6px}.hero-tags span{font-size:8px;padding:7px}.portrait-frame img{height:370px}.portrait-note{min-width:220px;padding:12px}.hero-stamp{font-size:8px;right:-8px}.service-grid,.service-grid-index{grid-template-columns:1fr}.service-tile{min-height:180px}.system-flow,.search-flow{grid-template-columns:1fr}.system-flow>div,.search-flow article{border-right:0!important;border-bottom:1px solid var(--line-dark)!important;min-height:145px}.system-flow>div:last-child,.search-flow article:last-child{border-bottom:0!important}.values-grid{grid-template-columns:1fr}.values-grid article{padding:22px 0!important;border-right:0;border-bottom:1px solid var(--line-dark)}.values-grid article:last-child{border:0}.related-links{grid-template-columns:1fr}.related-links a{border-right:0!important;border-bottom:1px solid var(--line)!important;padding:18px 0!important}.related-links a:last-child{border:0!important}.contact-method{grid-template-columns:1fr 22px;gap:7px}.contact-method span{grid-column:1/-1}.contact-method b{font-size:16px}.footer-top{grid-template-columns:1fr}.footer-brand{grid-column:auto}.services-footer{grid-template-columns:1fr 1fr}.footer-bottom{gap:10px;font-size:8px}.work-panel{padding:25px}.case-card{padding:23px}.case-row{grid-template-columns:75px 1fr;gap:10px}.service-cta .text-link{display:block;margin:20px 0 0}.button{padding:14px 15px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 
-/* Portfolio refinement: high-contrast accent on the light process section */
-.process-section .section-heading h2 em{color:#4b5a00 !important}
+/* Portfolio refinement: readable accent on the light process section */
+.process-section .section-heading h2 em{color:#657d00}
 .footer-contact-links{display:grid;justify-items:start;gap:10px;margin-top:22px}
 .footer-contact-links>a{font:12px/1.5 var(--mono);color:var(--lime);text-decoration:none}
 .footer-contact-links>a:hover{color:#efffa7}
@@ -39,3 +39,14 @@
 .faq-item[open] summary:after{content:'−'}
 .faq-answer{padding:0 38px 23px 0;font-size:14px;line-height:1.8;color:#777481;max-width:720px}
 @media(max-width:780px){.faq-section{padding:70px 0}.faq-layout{grid-template-columns:1fr;gap:30px}.faq-intro{position:static}.faq-intro p{max-width:650px}}
+
+
+/* Final contrast correction: dark accent on light editorial sections.
+   Keep electric lime for dark sections, buttons and small accents. */
+.intro-section .intro-grid h2 em,
+.process-section .section-heading h2 em {
+  color: #3f4a00 !important;
+}
+.intro-section .intro-quote:before {
+  color: #3f4a00 !important;
+}
